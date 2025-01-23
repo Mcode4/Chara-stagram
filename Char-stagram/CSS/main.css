@@ -1,0 +1,357 @@
+*{
+    padding: 0px;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 1vh;
+}
+
+/* Body Elements */
+#section-1{
+    display: grid;
+    max-height: 100vh;
+    grid-template-rows: 50px 3.5fr 6fr .5fr;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    position: sticky;
+}
+#feed-section{
+    display: grid;
+    grid-template-rows: auto .8fr auto 9.5fr;
+    gap: 1vh;
+    justify-content: center;
+    background-color: rgba(220, 220, 220, 0.74);
+    padding: 5px;
+}
+
+/* Section 1 Elements */
+#profile{
+    display: grid;
+    justify-content: center;
+    border-bottom: 2px solid gray;
+    padding: 5px;
+}
+#explore-options{
+    padding-bottom: 100%;
+    border-bottom: 2px solid gray;
+    padding: 5px;
+    display: grid;
+}
+#logout{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+#logout > h4{
+    text-align: center;
+    color:#FFFFFF;
+    background-color: red;
+    height: 40%;
+    width: 80%;
+    border-radius: 5px;
+}
+
+
+/* Logo Elements */
+#app-title{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+#app-title > img{
+    width: 25px;
+    height: 25px;
+}
+
+
+/* Profile Elements */
+#imgHolder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#imgHolder > img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+#profile-name{
+    display: grid;
+    grid-template-rows: 20px 10px;
+    align-items: center;
+    justify-content: center;
+}
+#username{
+    text-align: center;
+    color: gray;
+}
+#profile-status{
+    display: grid;
+    grid-template-rows: 20px 10px;
+    align-items: center;
+    justify-content: center;
+}
+#fAmount{
+    text-align: center;
+    
+}
+h6{
+    color: gray;
+}
+
+
+/* Explore Option Element */
+
+#explore-links{
+    display: grid;
+    grid-template-rows: 8fr 1fr;
+    padding: 5px;
+    gap: 10px;
+    justify-content: flex-start;
+    
+}
+.explore-links{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.explore-links > img{
+    width: 25px;
+    height: 25px;
+}
+#bottom-options{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+
+
+
+
+
+
+/* Feed Section Elements */
+#search-section{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 30px;
+    padding: 5px;
+}
+#stories{
+    display: flex;
+    gap: 10px;
+}
+#feed{
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+}
+h4{
+    text-align: center;
+}
+
+
+/* Search Elements */
+#search{
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    height: 40px;  
+    width: 50vh;
+}
+
+#searchcombo{
+    display: flex;
+    gap: 10px;
+}
+.search{
+    border: none;
+    background-color: transparent;
+    padding: 5px;
+    height: 40px; 
+    width: 100%; 
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+#search-button{
+    height: 40px;
+    padding: 5px;
+    border-radius: 50%;
+}
+#postbutton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orange;
+    border-radius: 15px;
+    color: #FFFFFF;
+    height: 40px;    
+    border: none;
+}
+#searchDiv{
+    height: fit-content;
+    max-width: 100%;
+    width: 100%;
+    background-color: lightgray;
+    border-radius: 10px;
+}
+.searchResults{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 15px;
+    gap: 5px;
+    height: fit-content;
+}
+.searchPfp{
+    height: 80px;
+    width: 80px;
+    align-self: center;
+    justify-self: center;
+    border-radius: 50%;
+}
+#searchName{
+    height: 50px;
+    width: 100%;
+    align-self: center;
+    justify-self: center;
+}
+
+/* Story Elements */
+
+.mediumProfiles{
+    background-color: orange;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+.storyHolders > h5{
+    text-align: center;
+}
+
+/* Post Elements */
+.posts{
+    display: grid;
+    height: fit-content;
+    width: 60vh;
+    gap: 5px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+}
+.postUser{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+
+}
+.postImg{
+    height: 300px;
+    width: 100%;
+    max-height: 350px;
+    align-self: center;
+    justify-self: center;
+}
+.postActions{
+    display: flex;
+    padding: 10px;
+}
+.description{
+    height: fit-content;
+}
+
+
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.smallProfiles{
+    background-color: orange;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.profileInfo{
+    display: grid;
+    grid-template-rows: 20px 20px;
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+}
+/* .profileInfo > h6{
+    
+} */
+.userActions{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.userActions > button{
+    border: none;
+    background-color: transparent;
+}
+.postActions > button{
+    border: none;
+    background-color: transparent;
+}
+.smallIcon{
+    padding: 5px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    image-orientation: from-image;
+}
+.comment{
+    width: 80%;
+}
+
+
+
+
+
+
+
+
+.smallIcon:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+.explore-links:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+#logout > h4:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+#postbutton:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+.smallProfiles:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+.mediumProfiles:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+#profile-img:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+#search-button:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+.searchResults:hover{
+    background-color: gray;
+    cursor: pointer;
+}

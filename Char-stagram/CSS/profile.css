@@ -1,0 +1,326 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(220, 220, 220, 0.74);
+    padding: 15px;
+}
+
+#profile{
+    display: grid;
+    width: 90vh;
+    height: fit-content;
+    min-height: 100vh;
+    grid-template-rows: fit-content;
+    gap: 2px;
+    background-color: #FFFFFF;
+    justify-content: center;
+    padding: 5px;
+}
+#header{
+    height: fit-content;
+    width: 98%;
+    padding: 5px;
+    display: flex;
+    gap: 20%;
+    align-items: start;
+}
+#appTitle{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: fit-content;
+    height: fit-content;
+    justify-self: flex-start;
+}
+#searchContent{
+    display: grid;
+    width: fit-content;
+    align-self: start;
+    height: fit-content;
+    align-items: center;
+    justify-content: flex-end;
+}
+#searchbar{
+    display: flex;
+    justify-self: flex-end;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    height: 40px;  
+    width: 50vh;
+}
+#logo{
+    height: 40px;
+    width: 40px;
+
+}
+
+
+
+
+
+
+
+
+#account{
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    border-bottom: 2px solid gray;
+    padding: 10px;
+}
+
+
+
+#pfpHolder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pfp{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+
+#personbio{
+    display: grid;
+    grid-template-rows: 1fr 1fr 2fr;
+    height: 250px;
+}
+
+#userSection{
+    display: inline-flex;
+    grid-template-columns: 1fr 1fr;
+    gap:10px;
+    align-items: center;
+}
+#accountStatus{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap:10px;
+    align-items: center;
+}
+#personSection{
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    align-items: end;
+    justify-content:  start;
+
+}
+
+#favorites{
+    display: flex;
+    text-align: center;
+    background-color: gainsboro;
+    border-radius: 5px;
+    border: none;
+}
+
+#bio{
+    display: flex;
+    max-height: 120px;
+    font-size: smaller; 
+    align-self: flex-start;
+    text-align: start;
+}
+#name{
+    display: flex;
+    height: 100%;
+    align-self: flex-end;
+    justify-content: flex-start;
+    text-align: calc();
+}
+
+
+
+
+
+
+
+
+
+
+#connectionsSection{
+    display: flex;
+    justify-content: center;
+}
+.connections{
+    display: grid;
+    height:100%;
+    width: 100px;
+    align-items: start;
+    justify-content: center;
+    grid-template-rows: 75px auto;
+    padding: 5px;
+}
+.connectionProfiles{
+    background-color: yellow;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+#postSection{
+    display: grid;
+    justify-content: center;
+}
+
+
+.posts{
+    display: grid;
+    min-height: fit-content;
+    width: 60vh;
+    gap: 5px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+}
+.postUser{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+
+}
+.postImg{
+    height: 300px;
+    width: 100%;
+    max-height: 350px;
+    align-self: center;
+    justify-self: center;
+}
+.postActions{
+    display: flex;
+    padding: 10px;
+}
+.description{
+    height: fit-content;
+}
+
+
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.smallProfiles{
+    background-color: orange;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.profileInfo{
+    display: grid;
+    grid-template-rows: 20px 20px;
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+}
+/* .profileInfo > h6{
+    
+} */
+.userActions{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.userActions > button{
+    border: none;
+    background-color: transparent;
+}
+.postActions > button{
+    border: none;
+    background-color: transparent;
+}
+.smallIcon{
+    padding: 5px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    image-orientation: from-image;
+}
+.comment{
+    width: 80%;
+}
+
+
+
+.searchedUsers{
+    width: 100%;
+    height:fit-content;
+    background-color: gray;
+    border-radius: 5px;
+    justify-content: center;
+}
+.foundUsers{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    width: 100%;
+
+}
+.noUsers{
+    text-align: center;
+    width: 100%;
+
+}
+.usersImages{
+    display: flex;
+    height: 50px;
+    width: 50px;
+    align-items: center;
+    justify-self: center;
+    border-radius: 50%;
+}
+.usersNames{
+    text-align: left;
+    align-self: center;
+}
+
+
+
+#appTitle:hover{
+    cursor: pointer;
+}
+.connectionProfiles:hover{
+    cursor: pointer;
+}
+.smallIcon:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+.smallProfiles:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+.mediumProfiles:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+#profile-img:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+#favorites:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+#searchbar:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+.foundUsers:hover{
+    background-color: gray;
+    cursor: pointer;
+}
